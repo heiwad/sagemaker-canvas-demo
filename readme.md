@@ -33,6 +33,9 @@ Alternatively, you can bring your own tabular data. The training data must be CS
 1. Create a Sagemaker using the Quick Setup and allow Sagemaker to create the default execution role.
 
    You may create your domain in one of the following regions: US East (Ohio), US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), Europe (Frankfurt), or Europe (Ireland).
+   
+   - When prompted to allow access to additional S3 buckets, you may choose either option. This demo does *not* require access to additional S3 buckets
+   - When prompted for VPC access, pick whichever option makes the most sense for you. This demo does *not* require VPC integration. 
 
 2. Find the S3 bucket created for your SageMaker Studio domain and apply the following CORS policy to the bucket. 
 
