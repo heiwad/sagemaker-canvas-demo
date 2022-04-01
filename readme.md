@@ -12,13 +12,21 @@ Note SageMaker canvas may create resources such as that require increasing your 
 
 ### Step 1: Get the data
 
-The data set I'm using is from the XGBoost Customer Churn example in the amazon-sagemaker-examples repo. It's publicly available and was mentioned in the book [Discovering Knowledge in Data](https://www.amazon.com/dp/0470908742/) by Daniel T. La rose. It is attributed by the author to the University of California Irvine Repository of Machine Learning Datasets. 
+Download the data from this repo. 
+
+Training Data: [churn-train.csv](https://github.com/heiwad/sagemaker-canvas-demo/blob/main/churn-test.csv)
+
+Test Data: [churn-test.csv](https://github.com/heiwad/sagemaker-canvas-demo/blob/main/churn-test.csv)
+
+
+
+**Data Notes:**
+
+The data set I'm using is from the XGBoost Customer Churn example in the amazon-sagemaker-examples repo. Mobile operators have historical records on which customers ultimately ended up churning and which continued using the service. We can use this historical information to construct an ML model of one mobile operator’s churn.
+
+It's publicly available and was mentioned in the book [Discovering Knowledge in Data](https://www.amazon.com/dp/0470908742/) by Daniel T. La rose. It is attributed by the author to the University of California Irvine Repository of Machine Learning Datasets. 
 
 Alternatively, you can bring your own tabular data. The training data must be CSV that uses commas as a separator and is less than 5GB in size. Reserve a portion of the data in a separate CSV so you can run inferences. 
-
-Mobile operators have historical records on which customers ultimately ended up churning and which continued using the service. We can use this historical information to construct an ML model of one mobile operator’s churn.
-
-
 
 ### Step 2: Get a Sagemaker Studio Domain
 
